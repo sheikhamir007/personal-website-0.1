@@ -127,9 +127,34 @@ html{
     font-size: 13px;
 }
 /* about-area  */
-/* .about_img{
 
-} */
+    /* .about_img {
+        background-color: #dc5a5a;
+        background-image: url(../images/PortfolioPicture.jpeg);
+        background-size: cover;
+        background-position: 62% 28%;
+        background-position: topcenter;
+        background-repeat: no-repeat;
+        margin: 0px;
+    }
+
+    .about_img{
+       max-width: 599px;
+        max-height: 500px;
+    } */
+
+    .about-profil .img{
+        
+        height: 720px;
+        overflow: hidden;
+        background-color: #dc5a5a;
+        background-image: url(../images/PortfolioPicture.jpeg);
+        background-size: cover;
+        background-position: 62% 8%;
+        background-position: topcenter;
+        background-repeat: no-repeat;
+    }
+
 .about_us {
     background-color: #131416;
     
@@ -284,13 +309,15 @@ span.data{
     padding-bottom: 90px;
 }
 
-.service_data{
+.service_data {
     background-color: #131416;
-    padding:30px;
+    padding-bottom: 30px;
+    padding: 20px;
     margin-top: 40px;
     box-shadow: 10px 10px 10px #0095ffb8;
     transition: .2s;
-   
+    max-height: 350px;
+    height: 350px;
 }
 
 .service_data:hover{
@@ -388,13 +415,14 @@ span.data{
     text-align: center;
 }
 
-.hire_me p {
+.hire_me h6 {
     color: #DC965A;
     color: #ffffff;
     font-family: 'Nunito', sans-serif;
     font-size:42px;
     font-weight: 600;
     padding-bottom: 30px;
+    text-transform: uppercase;
 }
 
 .hire_btn{
@@ -497,21 +525,20 @@ span.data{
 }
 
 .education_data h2{
-    font-size: 21px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 800;
     font-family: 'Nunito', sans-serif;
     color: #ffffff;
     padding-bottom: 2px;
+ 
 
 }
-.education_data p{
-    font-size: 15px;
+.education_data p {
+    font-size: 20px;
     font-weight: 500;
     font-family: 'Nunito', sans-serif;
     color: #ffffff;
 }
-
-
 
 .experience_area {
     background-color: #1C1D24;
@@ -519,8 +546,12 @@ span.data{
     padding-top: 20px;
     margin-top: 40px;
     padding-right: 20px;
-    padding-bottom: 20px;
-    
+    padding-bottom: 78px;
+    height: 475px;;
+}
+.education_data{
+    padding: 10px;
+
 }
 
 
@@ -566,6 +597,36 @@ span.data{
 
 .skill_bar::after{
     content: "85%";
+    position: absolute;
+    top: -22px;
+    right: 21px;
+    width: 20px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Nunito'sans-serif;
+}
+.skill_barql{
+    width: 100%;
+    height: 8px;
+    position: relative;
+    margin-top: 20px;
+}
+
+
+
+.skill_barql::before{
+    content:"";
+    width: 80%;
+    height: 8px;
+    background-color: #DC965A;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.skill_barql::after{
+    content: "80%";
     position: absolute;
     top: -22px;
     right: 21px;
@@ -723,6 +784,41 @@ span.data{
     font-weight: 700;
     font-family: 'Nunito'sans-serif;
 }
+
+.skill_barcv{
+    width: 100%;
+    height: 8px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.project-icon i{
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.skill_barcv::before{
+    content:"";
+    width: 88%;
+    height: 8px;
+    background-color: #DC965A;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.skill_barcv::after{
+    content: "88%";
+    position: absolute;
+    top: -22px;
+    right: 21px;
+    width: 20px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Nunito'sans-serif;
+}
+
 
 
 
@@ -882,20 +978,24 @@ input:focus{
     font-family: 'Nunito'sans-serif;
     font-weight: 600;
     font-size: 14px;
-    color: #dc5a5a;
+    color: #DC965A;
     width: 165px;
     display: block;
     position: absolute;
     right: -182px;
-    top: -1px;
+    top: 13px;
     text-align: initial;
 }
  
-@media (min-width:300px) { 
-    .project_margin {
-        margin-left: 0px;
+    @media (max-width:500px) { 
+        .project_margin {
+            margin-left: 0px;
+        }
+    .about-profil .img {
+        height:510px;
+    
     }
-}
+        }
 
 .icon_project i{
     font-size: 22px;
@@ -904,3 +1004,19 @@ input:focus{
     margin-top: 20px;
 }
 
+.skill_darql h3{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+}
+
+.pb_service{
+    margin-bottom: 60px;
+    display: inline-block;
+}
+
+.pb_service_3{
+    margin-bottom: 81px;
+    display: inline-block;
+}
